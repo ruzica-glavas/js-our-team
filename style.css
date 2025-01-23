@@ -24,7 +24,8 @@ main{
     display: flex;
     flex-wrap: wrap;
     /*justify-content: space-between;*/
-    gap: 5%
+    gap: 5%;
+    
 }
 
 .flex > div{
@@ -40,6 +41,10 @@ main{
 
 span{
     font-size: 12px;
+}
+
+#email{
+    color: #4AC7F0;
 }
 
 .flex-column{
