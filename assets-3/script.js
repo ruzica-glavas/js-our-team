@@ -75,10 +75,10 @@ btn.addEventListener(`click`, function(event){
 
   event.preventDefault()
 
-  const name = document.getElementById(`name`).value
-  const role = document.getElementById(`role`).value
-  const email = document.getElementById(`email`).value
-  const img = document.getElementById(`img`).value
+  const name = document.getElementById("form-name").value;
+  const role = document.getElementById("form-role").value;
+  const email = document.getElementById("form-email").value;
+  const img = document.getElementById("form-img").value;
 
 
   teamMembers.push({
@@ -93,7 +93,7 @@ btn.addEventListener(`click`, function(event){
 
             <div class="flex">
                 <figure>
-                    <img id="image" height="90px" src= ${img} alt="${name}">
+                    <img id="image" height="90px" src= "${img}" alt="${name}">
                 </figure>
                 <div class="flex flex-column">
                     <h5 id="name">${name}</h5>
