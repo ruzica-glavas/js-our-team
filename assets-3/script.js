@@ -34,7 +34,8 @@ const teamMembers = [
     role: "Analyst",
     email: "danielaamet@team.com",
     img: "./assets-3/img/female3.png"
-  }
+  },  
+  
 ];
 
 const flex= document.querySelector(`.flex`)
@@ -64,3 +65,45 @@ function addAllMembers (){
 }
 
 addAllMembers()
+
+//Parte bonus
+
+const btn = document.getElementById("btn")
+
+
+btn.addEventListener(`click`, function(event){
+
+  event.preventDefault()
+
+  const name = document.getElementById(`name`).value
+  const role = document.getElementById(`role`).value
+  const email = document.getElementById(`email`).value
+  const img = document.getElementById(`img`).value
+
+
+  teamMembers.push({
+    name,
+    role,
+    email,
+    img
+
+  })
+
+  flex.innerHTML += `
+
+            <div class="flex">
+                <figure>
+                    <img id="image" height="90px" src= ${img} alt="${name}">
+                </figure>
+                <div class="flex flex-column">
+                    <h5 id="name">${name}</h5>
+                    <span id="role">${role}</span>
+                    <span id="email">${email}</span>
+                </div>
+            </div>
+            
+            `
+
+
+
+})

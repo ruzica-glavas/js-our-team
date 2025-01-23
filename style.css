@@ -35,8 +35,12 @@ main{
 
     margin-block: 10px;
 
+    margin-bottom: 10px;
+
     color: white;
 
+    
+    
 }
 
 span{
@@ -51,3 +55,32 @@ span{
     flex-direction: column;
     width: 100%;
 }
+#form-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin-top: 20px; 
+    width: 25%;
+    align-items: center;
+}
+
+input, label {
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+button{
+    background-color: #d92f6b;
+    border-color: #d92f6b;
+    color: white;
+    border-radius: 10px;
+}
+
+
