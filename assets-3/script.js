@@ -38,7 +38,7 @@ const teamMembers = [
 ];
 
 const flex= document.querySelector(`.flex`)
-const image= document.getElementById (`name`)
+
 
 function addAllMembers (){
 
